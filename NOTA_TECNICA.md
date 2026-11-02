@@ -34,6 +34,10 @@ Para verificar el funcionamiento desarrollé pruebas con pytest que cubren la no
 
 ## Uso de IA
 
-Utilicé ChatGPT como apoyo durante el desarrollo para organizar el código, implementar algunas funciones, revisar la lógica de normalización y validación y preparar las pruebas. También me apoyé en sus sugerencias para desarrollar la interfaz.
+Utilicé ChatGPT como apoyo durante el desarrollo para organizar el código, implementar algunas funciones, revisar la lógica de normalización y validación, preparar las pruebas y desarrollar la interfaz.
 
-Sin embargo, revisé las propuestas y definí los criterios que debía seguir el sistema, especialmente en el manejo de montos, monedas, estados, fechas y registros inválidos. No utilicé valores predeterminados para completar información que no estuviera presente en los archivos originales, ya que esto podría alterar los datos.
+Entre las consultas que realicé estuvieron la integración de los tres formatos JSON en un modelo común, la definición de reglas para detectar datos inconsistentes y la revisión de la lógica para identificar transacciones duplicadas.
+
+No acepté automáticamente todas las sugerencias. Revisé las propuestas y adapté las soluciones a los requisitos de la actividad. Por ejemplo, mantuve el uso de `Decimal` para manejar los montos, evité asignar monedas por defecto cuando el dato no estaba disponible y separé los indicadores de validez y duplicidad.
+
+También utilicé las pruebas y la ejecución del sistema para comprobar el comportamiento de las funcionalidades implementadas. La IA fue una herramienta de apoyo, pero las decisiones técnicas y la validación final quedaron bajo mi responsabilidad.
