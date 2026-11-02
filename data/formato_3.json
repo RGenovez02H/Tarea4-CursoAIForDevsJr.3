@@ -1,0 +1,81 @@
+[
+  {
+    "ref": "F3-3001",
+    "amount": "75.25",
+    "currency": "GTQ",
+    "date": "2025-03-01T09:30:00Z",
+    "result": "approved"
+  },
+  {
+    "ref": "F3-3002",
+    "amount": 10,
+    "currency": "USD",
+    "date": "2025-03-02T12:30:00+02:00",
+    "result": "waiting"
+  },
+  {
+    "ref": "F3-NO-CURRENCY",
+    "amount": "12.00",
+    "date": "2025-03-03",
+    "result": "rejected"
+  },
+  {
+    "ref": "F3-NEGATIVE",
+    "amount": "-4.50",
+    "currency": "EUR",
+    "date": "2025-03-04",
+    "result": "rejected"
+  },
+  {
+    "ref": "F3-PRECISION",
+    "amount": "1.234",
+    "currency": "USD",
+    "date": "2025-03-05",
+    "result": "approved"
+  },
+  {
+    "ref": "F3-AMBIGUOUS",
+    "amount": "3,500.00",
+    "currency": "GTQ",
+    "date": "2025-03-06",
+    "result": "waiting"
+  },
+  {
+    "ref": "F3-CURRENCY",
+    "amount": "17.00",
+    "currency": "MXN",
+    "date": "2025-03-07",
+    "result": "approved"
+  },
+  {
+    "ref": "F3-RESULT",
+    "amount": "8.00",
+    "currency": "USD",
+    "date": "2025-03-08",
+    "result": "processing"
+  },
+  {
+    "ref": "F3-DATE",
+    "amount": "9.00",
+    "currency": "EUR",
+    "date": "2025-02-30",
+    "result": "approved"
+  },
+  {
+    "amount": "6.00",
+    "currency": "USD",
+    "date": "2025-03-09",
+    "result": "waiting"
+  },
+  {
+    "ref": false,
+    "amount": "5.00",
+    "currency": "EUR",
+    "date": "2025-03-10",
+    "result": "rejected"
+  },
+  {
+    "ref": "F3-INCOMPLETE",
+    "amount": "2.00"
+  }
+]

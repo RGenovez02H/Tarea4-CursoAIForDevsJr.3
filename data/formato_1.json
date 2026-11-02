@@ -1,0 +1,82 @@
+[
+  {
+    "id": "F1-1001",
+    "amount": "1250.50",
+    "currency": "USD",
+    "timestamp": "2025-01-15T10:30:00Z",
+    "status": "success"
+  },
+  {
+    "id": 1002,
+    "amount": 42.5,
+    "currency": "EUR",
+    "timestamp": "2025-01-16 11:45:20",
+    "status": "pending"
+  },
+  {
+    "id": "F1-NEG",
+    "amount": "-20.00",
+    "currency": "GTQ",
+    "timestamp": "2025-01-17",
+    "status": "failed"
+  },
+  {
+    "id": "F1-PRECISION",
+    "amount": "5.123",
+    "currency": "EUR",
+    "timestamp": "2025-01-18T08:00:00",
+    "status": "success"
+  },
+  {
+    "id": "F1-AMBIGUOUS",
+    "amount": "1,234.56",
+    "currency": "USD",
+    "timestamp": "2025-01-19T08:00:00Z",
+    "status": "pending"
+  },
+  {
+    "id": "F1-CURRENCY",
+    "amount": "12.00",
+    "currency": "CAD",
+    "timestamp": "2025-01-20T08:00:00Z",
+    "status": "success"
+  },
+  {
+    "id": "F1-STATUS",
+    "amount": "18.25",
+    "currency": "USD",
+    "timestamp": "2025-01-21T08:00:00Z",
+    "status": "processing"
+  },
+  {
+    "id": "F1-DATE",
+    "amount": "19.00",
+    "currency": "GTQ",
+    "timestamp": "2025-02-30T08:00:00Z",
+    "status": "success"
+  },
+  {
+    "amount": "7.00",
+    "currency": "USD",
+    "timestamp": "2025-01-22T08:00:00Z",
+    "status": "pending"
+  },
+  {
+    "id": true,
+    "amount": "8.00",
+    "currency": "EUR",
+    "timestamp": "2025-01-23T08:00:00Z",
+    "status": "success"
+  },
+  {
+    "id": "F1-INCOMPLETE",
+    "amount": "3.00"
+  },
+  {
+    "id": "F1-1001",
+    "amount": "30.00",
+    "currency": "USD",
+    "timestamp": "2025-01-24T08:00:00Z",
+    "status": "success"
+  }
+]

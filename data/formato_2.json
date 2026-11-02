@@ -1,0 +1,82 @@
+[
+  {
+    "transaction_id": "F2-2001",
+    "total": "2500.00",
+    "currency_code": "EUR",
+    "created_at": "2025-02-01T12:15:00+02:00",
+    "state": "completed"
+  },
+  {
+    "transaction_id": "F2-2002",
+    "total": 15.75,
+    "currency_code": "GTQ",
+    "created_at": "2025-02-02",
+    "state": "pending"
+  },
+  {
+    "transaction_id": "F2-NEGATIVE",
+    "total": "-1.00",
+    "currency_code": "USD",
+    "created_at": "2025-02-03T08:00:00Z",
+    "state": "error"
+  },
+  {
+    "transaction_id": "F2-PRECISION",
+    "total": "9.999",
+    "currency_code": "EUR",
+    "created_at": "2025-02-04T08:00:00Z",
+    "state": "completed"
+  },
+  {
+    "transaction_id": "F2-AMBIGUOUS",
+    "total": "2,500.00",
+    "currency_code": "USD",
+    "created_at": "2025-02-05T08:00:00Z",
+    "state": "pending"
+  },
+  {
+    "transaction_id": "F2-CURRENCY",
+    "total": "11.00",
+    "currency_code": "BTC",
+    "created_at": "2025-02-06T08:00:00Z",
+    "state": "completed"
+  },
+  {
+    "transaction_id": "F2-STATE",
+    "total": "14.00",
+    "currency_code": "USD",
+    "created_at": "2025-02-07T08:00:00Z",
+    "state": "queued"
+  },
+  {
+    "transaction_id": "F2-DATE",
+    "total": "20.00",
+    "currency_code": "EUR",
+    "created_at": "2025-02-30T08:00:00Z",
+    "state": "completed"
+  },
+  {
+    "total": "21.00",
+    "currency_code": "USD",
+    "created_at": "2025-02-08T08:00:00Z",
+    "state": "pending"
+  },
+  {
+    "transaction_id": 12.5,
+    "total": "22.00",
+    "currency_code": "GTQ",
+    "created_at": "2025-02-09T08:00:00Z",
+    "state": "completed"
+  },
+  {
+    "transaction_id": "F2-INCOMPLETE",
+    "total": "23.00"
+  },
+  {
+    "transaction_id": "F2-2001",
+    "total": "30.00",
+    "currency_code": "EUR",
+    "created_at": "2025-02-10T08:00:00Z",
+    "state": "completed"
+  }
+]

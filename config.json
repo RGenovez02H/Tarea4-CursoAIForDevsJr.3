@@ -1,0 +1,104 @@
+{
+  "currencies": [
+    "USD",
+    "EUR",
+    "GTQ"
+  ],
+  "canonical_states": [
+    "PENDING",
+    "SUCCESS",
+    "FAILED",
+    "CANCELLED"
+  ],
+  "sources": {
+    "format_1": {
+      "detectors": [
+        "id",
+        "status",
+        "timestamp"
+      ],
+      "fields": {
+        "transaction_id": "id",
+        "amount": "amount",
+        "currency": "currency",
+        "timestamp": "timestamp",
+        "status": "status"
+      },
+      "status_map": {
+        "pending": "PENDING",
+        "success": "SUCCESS",
+        "failed": "FAILED",
+        "cancelled": "CANCELLED"
+      }
+    },
+    "format_2": {
+      "detectors": [
+        "transaction_id",
+        "state",
+        "total",
+        "currency_code",
+        "created_at"
+      ],
+      "fields": {
+        "transaction_id": "transaction_id",
+        "amount": "total",
+        "currency": "currency_code",
+        "timestamp": "created_at",
+        "status": "state"
+      },
+      "status_map": {
+        "pending": "PENDING",
+        "completed": "SUCCESS",
+        "error": "FAILED",
+        "void": "CANCELLED"
+      }
+    },
+    "format_3": {
+      "detectors": [
+        "ref",
+        "date",
+        "result"
+      ],
+      "fields": {
+        "transaction_id": "ref",
+        "amount": "amount",
+        "currency": "currency",
+        "timestamp": "date",
+        "status": "result"
+      },
+      "status_map": {
+        "waiting": "PENDING",
+        "approved": "SUCCESS",
+        "rejected": "FAILED",
+        "cancelled": "CANCELLED"
+      }
+    }
+  },
+  "amount_rules": {
+    "minimum": "0",
+    "maximum_decimal_places": 2,
+    "decimal_separator": ".",
+    "thousands_separator": null,
+    "scientific_notation": false,
+    "rounding": false
+  },
+  "identifier_rules": {
+    "allowed_types": [
+      "string",
+      "integer"
+    ],
+    "trim_outer_whitespace": true,
+    "duplicates_within_source_only": true
+  },
+  "datetime_formats": [
+    "iso8601_datetime_with_timezone",
+    "iso8601_datetime_without_timezone",
+    "yyyy_mm_dd_hh_mm_ss",
+    "yyyy_mm_dd"
+  ],
+  "timezone_for_naive_values": "UTC",
+  "duplicate_rules": {
+    "retain_records": true,
+    "include_in_financial_totals": false
+  }
+}
